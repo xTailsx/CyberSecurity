@@ -1,2 +1,8 @@
 echo - output any text we provide
 whoami - find out what user you are logged in as
+ls - listing
+cd - change directory
+cat - concentenate
+pwd - print working directory
+find - searching for files
+grep - Grep command can be used to find or search a regular expression or a string in a text file.
