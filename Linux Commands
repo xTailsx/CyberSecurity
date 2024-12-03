@@ -1,3 +1,10 @@
+Linux Operators Commands
+& - this operator allows you to run commands in the background of your terminal
+&& - this operator allows you to combine multiple comamnds together in one line of your terminal
+> - this operator is a redirector - meaning we can take the output from a command (such as using cat to output a file) and direct it elsewhere
+>> - this operator does the same function of the > operator but appends the output rather than replacing (meaning nothing is overwritten)
+
+Commmands
 echo - output any text we provide
 whoami - find out what user you are logged in as
 ls - listing
