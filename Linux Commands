@@ -49,3 +49,12 @@ systemctl - this command allows us to interact with the systemd process/daemon
  ----Disable
 top - top gives you real-time statistics about the processes running on your system instead of a one-time view.
 fg - used to bring the background process back into use on the terminal
+apt - part of the package management software also named apt. Apt contains a whole suite of tools that allows us to manage the packages and sources of our software, and to install or remove software at the same time.
+
+CRONTab Commands
+MIN -	What minute to execute at
+HOUR	- What hour to execute at
+DOM	- What day of the month to execute at
+MON - 	What month of the year to execute at
+DOW	- What day of the week to execute at
+CMD	- The actual command that will be executed.
