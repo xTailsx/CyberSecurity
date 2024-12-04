@@ -1,3 +1,9 @@
+Common Directories
+/etc - store system files used by your operating system
+/var - variable data -stores data that is frequently accessed or written by services or applications running on the system
+/root - home for the "root" system user
+/tmp - temp directory
+
 Linux Operators Commands
 & - this operator allows you to run commands in the background of your terminal
 && - this operator allows you to combine multiple comamnds together in one line of your terminal
@@ -7,9 +13,39 @@ Linux Operators Commands
 Commmands
 echo - output any text we provide
 whoami - find out what user you are logged in as
+crtl l - clear screen
 ls - listing
+ls -a - showing hidden folders
 cd - change directory
-cat - concentenate
+cat - concentenate (view contents of file)
 pwd - print working directory
 find - searching for files
 grep - Grep command can be used to find or search a regular expression or a string in a text file.
+--help - shows options available 
+man - manual page for information
+touch - create file
+mkdir - make directory
+cp - copy
+mv - move a file or folder
+rm - remove a file or folder
+file - determine the type of file
+-rwxrwxrwx - first 3 are permissions for the file owner, next 3 are group owner of the file, last 3 is for all other users
+su - swaps users
+-ls su - starts a new session as that user
+-ls l - checking read write permissons and folder owners
+nano - text editor
+vim - more advanced text editor
+wget - download files from web via HTTP - e.g wget https://assets.tryhackme.com/additional/linux-fundamentals/part3/myfile.txt
+scp - means of securely copying files. Unlike the regular cp command, this command allows you to transfer files between two computers using the SSH protocol to provide both authentication and encryption. example of command scp important.txt ubuntu@192.168.1.30:/home/ubuntu/transferred.txt 
+ps - provide a list of the running processes as our user's session and some additional information such as its status code, the session that is running it, how much usage time of the CPU it is using, and the name of the actual program or command that is being executed
+kill - kill a command and the associated PID that we wish to kill.
+ ----SIGTERM - Kill the process, but allow it to do some cleanup tasks beforehand
+ ----SIGKILL - Kill the process - doesn't do any cleanup after the fact
+ ----SIGSTOP - Stop/suspend a process
+systemctl - this command allows us to interact with the systemd process/daemon
+ ----Start
+ ----Stop
+ ----Enable
+ ----Disable
+top - top gives you real-time statistics about the processes running on your system instead of a one-time view.
+fg - used to bring the background process back into use on the terminal
