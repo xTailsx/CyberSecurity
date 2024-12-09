@@ -20,6 +20,9 @@ cd - change directory
 cat - concentenate (view contents of file)
 pwd - print working directory
 find - searching for files
+id - if the current user is assigned to any groups
+ifconfig - allows you to understand the system's network setup
+uname-a - provides system information like the OS, kernel version etc
 grep - Grep command can be used to find or search a regular expression or a string in a text file.
 --help - shows options available 
 man - manual page for information
