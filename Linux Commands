@@ -1,3 +1,16 @@
+File System
+/bin - binaries for all to use
+/sbin - system admin binaries that should be usable by systems administrators, but are less interesting to regular users
+/lib - libraries
+/lib64 - as 64bit binaries were being created, they needed their own place for libraries since the 32bit and 64bit version often had the same name.
+/usr - UNIX System Resources, is where sysv unix put their binaries and apps, where /bin, /sbin, and /lib is where Berkeley Unix put their apps, so this is a holdover for Unix compatibility. The Red Hat distros have the Berkeley places as symlinks to their /usr counterparts so there’s really only one directory, but packages built using older file locations still work.
+/usr/local - applications unique to this system
+/usr/share - for shared applications (could be setup as NFS or other to allow other systems to use these apps.
+/opt- optional (3rd party applications). Basically non-native to the distro apps so that you know what you got from your OS and what was extra from someone else. (Very few packagers use this)
+/mnt - a premade place to mount things into the machine (there are now others like the desktops will use directories in /run and the like.)
+/tmp- temporary files, this directory is also world writable by any user or process on the system.
+/var- variable length files. Things like logs, print spool, Mail spool, you may not be able to predict how much you’ll have so you put them here, on a separate filesystem so that if you do get an unexpectedly large amount, it fills the /var filesystem, but doesn’t crash the box by filling the entire filesystem.
+
 Common Directories
 /etc - store system files used by your operating system
 /var - variable data -stores data that is frequently accessed or written by services or applications running on the system
