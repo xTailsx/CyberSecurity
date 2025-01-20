@@ -24,6 +24,7 @@ Linux Operators Commands
 >> - this operator does the same function of the > operator but appends the output rather than replacing (meaning nothing is overwritten)
 
 Commmands
+Whatis - provides a brief description of the command line programs
 echo - output any text we provide
 whoami - find out what user you are logged in as
 crtl l - clear screen
